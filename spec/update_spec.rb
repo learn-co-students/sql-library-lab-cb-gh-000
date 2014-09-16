@@ -7,7 +7,7 @@ describe 'updating' do
     @sql_runner.execute_update_sql
   end
 
-  xit '' do 
-    expect{@db.execute("")}.to_not raise_exception
+  it 'updates the species of the last character in the characters table' do 
+    expect(@db.execute("SELECT species FROM characters WHERE id=8;").flatten[0]).to eq("alien")
   end
 end
