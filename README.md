@@ -1,5 +1,5 @@
 ---
-tags: sql, joins, select, create, insert, update, join tables, intermediate, WIP
+tags: sql, joins, select, create, insert, update, join tables, intermediate
 languages: sql
 resources: 3
 ---
