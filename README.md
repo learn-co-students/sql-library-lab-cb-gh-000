@@ -42,7 +42,7 @@ Populate the database with the following:
 
 ## Section 3: `update.sql`
 
-Update the species of the last character in the database. The test for this is pending. Go into `spec/update_spec.rb` and replace "your new species here" with the species.
+Update the species of the last character in the database by writing an update statement in `update.sql`. The test for this is pending. Go into `spec/update_spec.rb` make the test pass.
 
 ## Section 4: Querying your database
 
