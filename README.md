@@ -6,7 +6,7 @@ resources: 4
 
 # SQL Fantasy Library
 
-We're going to build a SQL database that will keep track of a library of fantasy series. These types of books can get complex, with many characters that span many books in a series, or just appear in one book, and characters that are species other than human. We will have tables for: Characters, Books, Series, Authors, and Sub-Genres. For a refresher on SQL syntax as you work through this lab, the [W3Schools SQL Tutorial](http://www.w3schools.com/sql/) is a helpful reference, as well as the resources below.
+We're going to build a SQL database that will keep track of a library of fantasy series. These types of books can get complex, with many characters that span many books in a series, or just appear in one book, and characters that are species other than human. We will have tables for: Characters, Books, Series, Authors, and Sub-Genres. For a refresher on SQL syntax as you work through this lab, the W3Schools SQL Tutorial is a helpful reference, as well as the resources listed below.
 
 ## Objectives
 
@@ -49,6 +49,7 @@ Update the species of the last character in the database to "Martian" by writing
 In `spec/querying_spec.rb`, complete the tests by writing the appropriate queries to satisfy the queries. Note that for this section, the database will be seeded with external data so don't expect it to reflect the data you added above.
 
 ## Resources
+* [W3Schools SQL Tutorial](http://www.w3schools.com/sql/)
 * [Seldom Blog](http://blog.seldomatt.com/) - [About SQL Joins: The 3 Ring Binder Model](http://blog.seldomatt.com/blog/2012/10/17/about-sql-joins-the-3-ring-binder-model/)
 * [Coding Horror](http://blog.codinghorror.com/) - [A Visual Explanation of SQL Joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 * [Geeky is Awesome](http://geekyisawesome.blogspot.com/) - [SQL Joins Tutorial](http://geekyisawesome.blogspot.com/2011/03/sql-joins-tutorial.html)
