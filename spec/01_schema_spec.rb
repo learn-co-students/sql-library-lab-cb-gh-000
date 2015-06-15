@@ -87,17 +87,17 @@ describe 'creating schema' do
     end
   end
 
-  context 'character_book join table' do
-    it "creates a character_book table with an id as a primary key" do
-      expect(@db.execute("PRAGMA table_info(character_book);").detect { |arr| arr[-1] == 1 && arr[2] == "INTEGER" }.length).to eq(6)
+  context 'character_books join table' do
+    it "creates a character_books table with an id as a primary key" do
+      expect(@db.execute("PRAGMA table_info(character_books);").detect { |arr| arr[-1] == 1 && arr[2] == "INTEGER" }.length).to eq(6)
     end
 
-    it "creates a character_book table with a book_id field" do
-      expect{@db.execute("SELECT book_id FROM character_book;")}.to_not raise_exception
+    it "creates a character_books table with a book_id field" do
+      expect{@db.execute("SELECT book_id FROM character_books;")}.to_not raise_exception
     end
 
-    it "creates a character_book table with a character_id field" do
-      expect{@db.execute("SELECT character_id FROM character_book;")}.to_not raise_exception
+    it "creates a character_books table with a character_id field" do
+      expect{@db.execute("SELECT character_id FROM character_books;")}.to_not raise_exception
     end 
   end
 end
