@@ -1,12 +1,12 @@
 ---
 tags: sql, joins, select, create, insert, update, join tables, intermediate
 languages: sql
-resources: 3
+resources: 4
 ---
 
 # SQL Fantasy Library
 
-We're going to build a SQL database that will keep track of a library of fantasy series. These types of books can get complex, with many characters that span many books in a series, or just appear in one book, and characters that are species other than human. We will have tables for: Characters, Books, Series, Authors, and Sub-Genres.
+We're going to build a SQL database that will keep track of a library of fantasy series. These types of books can get complex, with many characters that span many books in a series, or just appear in one book, and characters that are species other than human. We will have tables for: Characters, Books, Series, Authors, and Sub-Genres. For a refresher on SQL syntax as you work through this lab, the W3Schools SQL Tutorial is a helpful reference, as well as the resources listed below.
 
 ## Objectives
 
@@ -23,7 +23,7 @@ Build out the schema for our Fantasy Library database:
 4. Authors have a name
 5. Books have a title and year and belong to a series
 6. Characters have a name, motto, and species and belong to an author and a series
-7. Books have many characters and characters are in many books in a series. How do we accomplish this complex association? With a join table between Characters and Books. This join table (let's call it character_book) will just have -in addition to its primary key- two foreign key columns for the character and book ids. Each row in this join table acts as a relation between a book and a character.
+7. Books have many characters and characters are in many books in a series. How do we accomplish this complex association? With a join table between Characters and Books. This join table (let's call it character_books) will just have -in addition to its primary key- two foreign key columns for the character and book ids. Each row in this join table acts as a relation between a book and a character.
 
 ## Section 2: `insert.sql`
 
@@ -36,19 +36,20 @@ Populate the database with the following:
 * 8 characters
   * 4 characters in each series
     * of each of those 4, make 2 in all of the books in a series, and 2 in just 1 book in a series
-* Note you will need to insert values into your character_book join table
+* Note you will need to insert values into your character_books join table
 
 * Feel free to make these up if you don't know any Fantasy series :)
 
 ## Section 3: `update.sql`
 
-Update the species of the last character in the database by writing an update statement in `update.sql`. The test for this is pending. Go into `spec/update_spec.rb` make the test pass.
+Update the species of the last character in the database to "Martian" by writing an update statement in `update.sql`.
 
 ## Section 4: Querying your database
 
 In `spec/querying_spec.rb`, complete the tests by writing the appropriate queries to satisfy the queries. Note that for this section, the database will be seeded with external data so don't expect it to reflect the data you added above.
 
 ## Resources
+* [W3Schools SQL Tutorial](http://www.w3schools.com/sql/)
 * [Seldom Blog](http://blog.seldomatt.com/) - [About SQL Joins: The 3 Ring Binder Model](http://blog.seldomatt.com/blog/2012/10/17/about-sql-joins-the-3-ring-binder-model/)
 * [Coding Horror](http://blog.codinghorror.com/) - [A Visual Explanation of SQL Joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 * [Geeky is Awesome](http://geekyisawesome.blogspot.com/) - [SQL Joins Tutorial](http://geekyisawesome.blogspot.com/2011/03/sql-joins-tutorial.html)
