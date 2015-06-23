@@ -9,7 +9,7 @@ describe 'querying' do
     File.open('lib/decoded_data.sql', 'w'){ |f| f.truncate(0) }
   end
 
-  it 'selects all of the books titles and years in the first series and order them in chronological order by year' do 
+  it 'selects all of the books titles and years in the first series and orders them chronologically' do 
     expect(@db.execute(select_books_titles_and_years_in_first_series_order_by_year)).to eq([["Game of Thrones", 1996], ["A Clash of Kings", 1998], ["A Storm of Swords", 2000]])
   end
 
