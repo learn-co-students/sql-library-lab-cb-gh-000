@@ -1,9 +1,3 @@
----
-tags: sql, joins, select, create, insert, update, join tables, intermediate
-languages: sql
-resources: 4
----
-
 # SQL Fantasy Library
 
 We're going to build a SQL database that will keep track of a library of fantasy series. These types of books can get complex, with many characters that span many books in a series, or just appear in one book, and characters that are species other than human. We will have tables for: Characters, Books, Series, Authors, and Sub-Genres. For a refresher on SQL syntax as you work through this lab, the W3Schools SQL Tutorial is a helpful reference, as well as the resources listed below.
