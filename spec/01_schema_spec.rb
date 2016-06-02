@@ -1,11 +1,11 @@
-describe 'creating schema' do 
+describe 'creating schema' do
   before do
     @db = SQLite3::Database.new(':memory:')
     @sql_runner = SQLRunner.new(@db)
     @sql_runner.execute_schema_sql
   end
 
-  context 'series table' do 
+  describe 'series table' do 
     it "creates a series table with a title field" do
       expect{@db.execute("SELECT title FROM series;")}.to_not raise_exception
     end
@@ -23,7 +23,7 @@ describe 'creating schema' do
     end
   end
 
-  context 'subgenres table' do 
+  describe 'subgenres table' do 
     it "creates a subgenres table with a name field" do
       expect{@db.execute("SELECT name FROM subgenres;")}.to_not raise_exception
     end
@@ -33,7 +33,7 @@ describe 'creating schema' do
     end
   end
 
-  context 'authors table' do 
+  describe 'authors table' do 
     it "creates a authors table with a name field" do
       expect{@db.execute("SELECT name FROM authors;")}.to_not raise_exception
     end
@@ -43,7 +43,7 @@ describe 'creating schema' do
     end
   end
 
-  context 'books table' do 
+  describe 'books table' do 
     it "creates a books table with a title field" do
       expect{@db.execute("SELECT title FROM books;")}.to_not raise_exception
     end
@@ -61,7 +61,7 @@ describe 'creating schema' do
     end
   end
 
-  context 'characters table' do 
+  describe 'characters table' do 
     it "creates a characters table with a name field" do
       expect{@db.execute("SELECT name FROM characters;")}.to_not raise_exception
     end
@@ -87,7 +87,7 @@ describe 'creating schema' do
     end
   end
 
-  context 'character_books join table' do
+  describe 'character_books join table' do
     it "creates a character_books table with an id as a primary key" do
       expect(@db.execute("PRAGMA table_info(character_books);").detect { |arr| arr[-1] == 1 && arr[2] == "INTEGER" }.length).to eq(6)
     end
@@ -98,6 +98,6 @@ describe 'creating schema' do
 
     it "creates a character_books table with a character_id field" do
       expect{@db.execute("SELECT character_id FROM character_books;")}.to_not raise_exception
-    end 
+    end
   end
 end

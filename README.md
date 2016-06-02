@@ -1,6 +1,6 @@
 # SQL Fantasy Library
 
-We're going to build a SQL database that will keep track of a library of fantasy series. These types of books can get complex, with many characters that span many books in a series, or just appear in one book, and characters that are species other than human. We will have tables for: Characters, Books, Series, Authors, and Sub-Genres. For a refresher on SQL syntax as you work through this lab, the W3Schools SQL Tutorial is a helpful reference, as well as the resources listed below.
+We're going to build a SQL database that will keep track of books from a fantasy series in a library. These types of books can get complex, with many characters that span many books in a series, or just appear in one book, and characters that are species other than human. We will have tables for: `Characters`, `Books`, `Series`, `Authors`, and `Sub-Genres`. For a refresher on SQL syntax as you work through this lab, the W3Schools SQL Tutorial is a helpful reference, as well as the resources listed below.
 
 ## Objectives
 
@@ -12,12 +12,12 @@ We're going to build a SQL database that will keep track of a library of fantasy
 Build out the schema for our Fantasy Library database:
 
 1. All tables must have a `PRIMARY KEY` on the id
-2. Series have a title and belong to an author and a sub-genre
-3. A Sub-Genre has a name
-4. Authors have a name
-5. Books have a title and year and belong to a series
-6. Characters have a name, motto, and species and belong to an author and a series
-7. Books have many characters and characters are in many books in a series. How do we accomplish this complex association? With a join table between Characters and Books. This join table (let's call it character_books) will just have -in addition to its primary key- two foreign key columns for the character and book ids. Each row in this join table acts as a relation between a book and a character.
+2. `Series` have a title and belong to an author and a sub-genre
+3. A `Sub-Genre` has a name
+4. `Authors` have a name
+5. `Books` have a title and year and belong to a series
+6. `Characters` have a name, motto, and species and belong to an author and a series
+7. `Books` have many characters and characters are in many books in a series. How do we accomplish this complex association? With a join table between Characters and Books. This join table (let's call it character_books) will just have -in addition to its primary key- two foreign key columns for the character and book ids. Each row in this join table acts as a relation between a book and a character.
 
 ## Section 2: `insert.sql`
 
@@ -44,6 +44,10 @@ In `spec/querying_spec.rb`, complete the tests by writing the appropriate querie
 
 ## Resources
 * [W3Schools SQL Tutorial](http://www.w3schools.com/sql/)
-* [Seldom Blog](http://blog.seldomatt.com/) - [About SQL Joins: The 3 Ring Binder Model](http://blog.seldomatt.com/blog/2012/10/17/about-sql-joins-the-3-ring-binder-model/)
+* [Seldom Blog](http://blog.seldomatt.com/blog/2012/10/17/about-sql-joins-the-3-ring-binder-model/) - [About SQL Joins: The 3 Ring Binder Model](http://blog.seldomatt.com/blog/2012/10/17/about-sql-joins-the-3-ring-binder-model/)
 * [Coding Horror](http://blog.codinghorror.com/) - [A Visual Explanation of SQL Joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 * [Geeky is Awesome](http://geekyisawesome.blogspot.com/) - [SQL Joins Tutorial](http://geekyisawesome.blogspot.com/2011/03/sql-joins-tutorial.html)
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-library-lab' title='SQL Fantasy Library'>SQL Fantasy Library</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/sql-library-lab'>SQL Library Lab</a> on Learn.co and start learning to code for free.</p>
