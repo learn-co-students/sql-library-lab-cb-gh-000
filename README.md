@@ -40,7 +40,7 @@ Update the species of the last character in the database to "Martian" by writing
 
 ## Section 4: Querying your database
 
-In `spec/querying_spec.rb`, complete the tests by writing the appropriate queries to satisfy the queries. Note that for this section, the database will be seeded with external data so don't expect it to reflect the data you added above.
+In `lib/querying.rb`, complete the tests by writing the appropriate queries to satisfy the queries. Note that for this section, the database will be seeded with external data so don't expect it to reflect the data you added above.
 
 ## Resources
 * [W3Schools SQL Tutorial](http://www.w3schools.com/sql/)
