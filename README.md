@@ -24,8 +24,7 @@ Build out the schema for our Fantasy Library database:
 3. The `Sub-Genres` table has a name
 4. The `Authors` table has a name
 5. The `Books` table has a title and year and belong to a series
-6. The `Characters` table has a name, motto, and species and belong to an author and a
-   series
+6. The `Characters` table has a name, motto, and species and belong to an author
 7. The `Books` table has many characters and characters are in many books in a series.
    How do we accomplish this complex association? With a join table between
    Characters and Books. This join table (let's call it character_books) will
